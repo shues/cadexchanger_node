@@ -32,7 +32,8 @@ function updateParameters() {
 }
 
 function makeRequest() {
-  fetch("http://localhost:3000/hello?height=" + parameters.height + "&width=" + parameters.width + "&deep=" + parameters.deep)
+//  fetch("http://localhost:3000/hello?height=" + parameters.height + "&width=" + parameters.width + "&deep=" + parameters.deep)
+  fetch("https://round-gasket-299208.ew.r.appspot.com/hello?height=" + parameters.height + "&width=" + parameters.width + "&deep=" + parameters.deep)
     .then(function (res) {
       return res.text();
     })
