@@ -43,7 +43,7 @@ void Triangulate(const FunctionCallbackInfo<Value>& args) {
 
   Local<Object> obj = Object::New(isolate);
 
-  int height = args[0]->NumberValue();
+  int height = Number::New(isolate, args[0]);
   int width = args[1]->NumberValue();
   int deep = args[2]->NumberValue();
 
